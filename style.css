@@ -16,11 +16,11 @@ html {
 body{background:#F8F6FB;overflow:hidden;}
 
 #home{
-	background:red;
+	background:#1F405E;
 }
 
 header{
-	background:#1F405E;
+	background:blue;
 	height:10vh;
 	display:flex;
 	align-items:center;
