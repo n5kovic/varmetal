@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
@@ -6,7 +8,7 @@ html {
 	box-sizing:border-box;
 	margin:0;
 	padding:0;
-	font-family:Montserrat;
+	font-family:'Poppins', sans-serif;
 	font-weight:700;
 
 }
@@ -217,10 +219,6 @@ color:#1F405E;}
 	background-size:100%;
 	background-position:50% 30%;
 	background-repeat:fit;
-}
-
-#olucniSistemiPage{
-
 }
 
 #olucniSistemiPage img{
@@ -483,4 +481,16 @@ color:#1F405E;}
 
 .full-img.open{
 	transform:translate(-50%,-50%) scale(1);
+}
+
+@media (max-width: 1100px)
+{
+	header{
+		padding-top: 30px;
+		flex-direction: column;
+	}
+
+	header img{
+		margin-bottom: 30px;
+	}
 }
