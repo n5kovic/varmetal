@@ -489,10 +489,27 @@ color:#1F405E;}
 		padding-top: 30px;
 		flex-direction: column;
 	}
+ 
+	#homeText h1{
+		margin-top:200px;
+		font-size:3em;
+		
+	}
 
 	header img{
 		margin-bottom: 30px;
 	}
+
+	#homeContent{
+		flex-direction: column;
+		text-align: center;
+	}
+
+	#homeText{
+		flex:1;
+	}
+
+
 }
 
 @media only screen and (max-width:852px)
@@ -505,4 +522,18 @@ color:#1F405E;}
 	header img{
 		margin-bottom: 30px;
 	}
+
+	.mainNav li{
+		display: block;
+	}
+
+	#homeContent img{
+		width:80vw;
+	}
+
+	#homeText h1{
+		width:500px;
+	}
+
+	
 }
