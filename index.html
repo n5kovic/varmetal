@@ -48,13 +48,22 @@
 				
 				</div>
 				
-				<img src="images/cncImage.png" alt="lasercut"/>
+				<img class="cncImage" src="images/cncImage.png" alt="lasercut"/>
 			
 			</div>
 		
 		</div>
 		
 		<script src="script.js"> </script>
+
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"> </script>
+		
+		<script>
+			gsap.from('#homeText',{opacity:0, duration:2,delay:0.5, x:-100})
+			gsap.from('.cncImage',{opacity:0,duration:2,delay:0.5,x:150})
+			gsap.from('header',{opacity:0, duration:1,y:-100})
+		</script>
 		
 	</body>
 

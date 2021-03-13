@@ -20,7 +20,7 @@ body{background:#F8F6FB;overflow:hidden;}
 }
 
 header{
-	background:green;
+	background:#1F405E;
 	height:10vh;
 	display:flex;
 	align-items:center;
@@ -488,9 +488,12 @@ color:#1F405E;}
 		padding-top: 30px;
 		flex-direction: column;
 	}
+
+	#homeText{
+		margin-top:200px;
+	}
  
 	#homeText h1{
-		margin-top:200px;
 		font-size:3em;
 		
 	}
@@ -528,9 +531,15 @@ color:#1F405E;}
 
 	#homeContent img{
 		width:80vw;
+		margin-bottom: 100px;
 	}
 
+	#homeText{
+		margin-top:200px;
+	}
+ 
 	#homeText h1{
+		pointer-events: none;
 		width:500px;
 	}
 
