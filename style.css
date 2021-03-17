@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+  
 }
 
 *{
@@ -55,6 +56,14 @@ nav{
 	border-bottom:3px solid #F8F6FB;
 }
 
+label{
+	display: none;
+}
+
+#toggle{
+	display: none;
+}
+
 #homeContent{
 	padding:0 200px;
 	height:90vh;
@@ -99,7 +108,7 @@ nav{
 
 .mainWork{
 	display:flex;
-	justify-content:space-between;
+	justify-content:space-around;
 	padding:50px 330px 0;
 }
 
@@ -131,7 +140,7 @@ nav{
 
 .otherWork{
 	display:flex;
-	justify-content:space-between;
+	justify-content:space-around;
 	padding:40px 330px 0;
 }
 
@@ -397,6 +406,9 @@ color:#1F405E;}
 
 #dekoMenu ul li{
 	display:inline-block;
+	padding-top:10px;
+	padding-bottom:10px;
+	
 }
 
 
@@ -476,20 +488,21 @@ color:#1F405E;}
 	transition:all 0.5s ease-out;
 }
 
-
-
 .full-img.open{
 	transform:translate(-50%,-50%) scale(1);
 }
 
+
 @media only screen and (max-width: 1100px)
-{
+{	
 	header{
 		padding-top: 30px;
 		flex-direction: column;
 	}
 
-	#homeText{
+	#homeContent{
+		flex-direction: column;
+		text-align: center;
 		margin-top:200px;
 	}
  
@@ -502,46 +515,73 @@ color:#1F405E;}
 		margin-bottom: 30px;
 	}
 
-	#homeContent{
-		flex-direction: column;
-		text-align: center;
-	}
+	
 
 	#homeText{
 		flex:1;
 	}
 
+	.mainWork{
+		padding:50px 150px 0;
+	}
+
+	.otherWork{
+		padding:40px 150px 0;
+	}
 
 }
 
-@media only screen and (max-width:852px)
-{
-	header{
-		padding-top: 30px;
-		flex-direction: column;
+@media only screen and (max-width:852px){
+
+	body{
+		overflow:auto;
+		overflow-x: hidden;
+	}
+	label{
+		display: block;
+		cursor: pointer;
+		color:white;
+		font-size:2em;
 	}
 
-	header img{
-		margin-bottom: 30px;
+	nav{
+		text-align: center;
+		width:100%;
+		display: none;
 	}
 
-	.mainNav li{
+	nav a{
 		display: block;
 	}
 
-	#homeContent img{
-		width:80vw;
-		margin-bottom: 100px;
+	#toggle:checked + nav{
+		display: block;
 	}
 
-	#homeText{
-		margin-top:200px;
-	}
- 
-	#homeText h1{
-		pointer-events: none;
-		width:500px;
+	.mainWork{
+		flex-direction: column;
+		align-items: center;
+		
 	}
 
-	
+	.mainWorkTab{
+		transform:scale(0.9);
+	}
+
+	.otherWork{
+		flex-direction: column;
+		align-items: center;
+		
+	}
+
+	.otherWorkTab{
+		width:600px;
+		height:300px;
+		text-align:center;
+		border-radius:5px;
+		box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+		transform:scale(0.9);
+		margin-left: -2px  !important;
+		background-attachment: cover;
+	}
 }
